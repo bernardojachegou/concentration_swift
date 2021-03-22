@@ -32,7 +32,7 @@ class ViewController: UIViewController {
       game.chooseCard(at: cardNumber)
       updateViewFromModel()
     } else {
-      print("chosen card was not set!	)
+      print("chosen card was not set!")
     }
     
   }
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
   
   private var emojiChoices = ["👻", "🕷", "🎃", "💀", "🦇", "🧛🏻", "🧙🏽‍♀️", "🌙"]
   
-  private var emoji = [Int:String]()
+  private var emoji = [Card:String]()
   
   private func emoji(for card: Card) -> String {
     if emoji[card] == nil, emojiChoices.count > 0 {
