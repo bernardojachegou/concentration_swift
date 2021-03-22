@@ -8,7 +8,7 @@
 import Foundation
 
 struct Card: Hashable {
-  
+  // func to add hash into the cards
   func hash(into hasher: inout Hasher) {
     hasher.combine(identifier)
   }

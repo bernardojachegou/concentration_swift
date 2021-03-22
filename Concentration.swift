@@ -35,7 +35,7 @@ struct Concentration {
     assert(cards.indices.contains(index), "Concentration.chooseCard(at: \(index)): chosen index not in the cards")
     if !cards[index].isMatched {
       if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index {
-        // check if cards match
+        // check if cards match (now using hashable)
         if cards[matchIndex] == cards[index] {
           cards[matchIndex].isMatched = true
           cards[index].isMatched = true
