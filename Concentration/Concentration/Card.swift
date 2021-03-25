@@ -8,10 +8,9 @@
 import Foundation
 
 struct Card: Hashable {
-  // func to add hash into the cards
-  func hash(into hasher: inout Hasher) {
-    hasher.combine(identifier)
-  }
+  static func == (lhs: Card, rhs: Card) -> Bool {
+          lhs.identifier == rhs.identifier
+      }
   
   var isFaceUp =  false
   var isMatched = false
