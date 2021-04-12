@@ -11,9 +11,8 @@ class ViewController: UIViewController {
   
   private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
   
-  // Example of a computed property
   var numberOfPairsOfCards: Int {
-      return (cardButtons.count+1) / 2
+    return (cardButtons.count+1) / 2
   }
   
   private(set) var flipCount: Int = 0 {
@@ -64,10 +63,7 @@ class ViewController: UIViewController {
     }
   }
   
-  // private var emojiChoices = ["👻", "🕷", "🎃", "💀", "🦇", "🧛🏻", "🧙🏽‍♀️", "🌙"]
   private var emojiChoices = "👻🕷🎃💀🦇🧛🏻🧙🏽‍♀️🌙"
-
-  
   private var emoji = [Card:String]()
   
   private func emoji(for card: Card) -> String {

@@ -11,7 +11,6 @@ class ViewController: UIViewController {
   
   var deck = PlayingCardDeck()
   
-  
   @IBOutlet weak var PlayingCardView: PlayingCardView! {
     didSet {
       let swipe = UISwipeGestureRecognizer(target: self, action: #selector(nextCard))
@@ -48,7 +47,5 @@ class ViewController: UIViewController {
       }
     }
   }
-  
-  
 }
 
